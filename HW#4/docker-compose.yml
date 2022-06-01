@@ -2,8 +2,8 @@ version: "3.7"
 
 services:
   web:
-    image: tiangolo/uwsgi-nginx-flask:latest
-    # context: .
+    build: .
+    image: ossprac
     volumes:
       - "./app:/app"
     ports:
