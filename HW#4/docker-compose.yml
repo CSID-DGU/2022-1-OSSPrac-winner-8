@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    image: ossprac
+    volumes:
+      - "./app:/app"
+    ports:
+      - "5000:80"
+    
