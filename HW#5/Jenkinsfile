@@ -1,11 +1,11 @@
 node {
-	git poll: true, url:'https://github.com/CSID-DGU/2022-1-OSSPrac-winner-8.git'
+	git poll: true, url:'https://github.com/CSID-DGU/2022-1-OSSPrac-winner-8/HW#5.git'
 	withCredentials([[$class: 'UsernamePasswordMultiBinding',
 	credentialsId: 'docker-hub',
 	usernameVariable: 'DOCKER_USER_ID',
 	passwordVariable: 'DOCKER_USER_PASSWORD']]) {
 		stage('Pull') {
-			git 'https://github.com/CSID-DGU/2022-1-OSSPrac-winner-8.git'
+			git 'https://github.com/CSID-DGU/2022-1-OSSPrac-winner-8/HW#5.git'
 		}
 		stage('Unit Test') {
 		}
