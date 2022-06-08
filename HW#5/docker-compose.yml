@@ -1,12 +1,11 @@
 version: "3.7"
 
 services:
-  jenkins:
   web:
     build: .
     image: ossprac
     volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - /second/ftp_home/docker_data/jenkins_home:/var/jenkins_home
+      - "./app:/app"
     ports:
       - "5000:80"
+    
