@@ -3,7 +3,7 @@ version: "3.7"
 services:
   web:
     build: .
-    image: ossprac
+    image: wlgus5704/ossprac
     volumes:
       - "./app:/app"
     ports:
