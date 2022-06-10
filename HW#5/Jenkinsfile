@@ -10,9 +10,9 @@ node {
 		stage('Unit Test') {
 		}
 		stage('Build') {
-			sh(script: 'cd HW#5')
+			dir('HW#5'){
 			sh(script: 'docker-compose build web')
-		}
+		}}
 		stage('Tag') {
 			sh(script: '''docker tag ${DOCKER_USER_ID}/ossprac \
 			${DOCKER_USER_ID}/ossprac:latest''')
