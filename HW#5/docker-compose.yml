@@ -3,9 +3,10 @@ version: "3.7"
 services:
   web:
     build: .
+    user: root
     image: wlgus5704/ossprac
     volumes:
-      - "./app:/app:rw"
+      - "./app:/app"
     ports:
       - "5000:80"
 
