@@ -8,7 +8,4 @@ services:
       - "./app:/app"
     ports:
       - "5000:80"
-production:
-    image: wlgus5704/ossprac:latest
-    ports: 
-      - "5000:80"
+
